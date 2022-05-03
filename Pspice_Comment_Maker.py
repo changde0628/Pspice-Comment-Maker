@@ -28,6 +28,22 @@ for lines in data_input:
         if(lines.find("lambda")!=-1):
             tmp_write += " "
             tmp_write += process_lines[4].replace("lambda","通道調變效應")
+            if((lines.find("Cgso")!=-1) and (lines.find("Cgdo")!=-1)):
+                tmp_write += " "
+                tmp_write += process_lines[5].replace("Cgso","閘源重疊電容")
+                tmp_write += process_lines[6].replace("Cgdo","閘汲重疊電容")
+            else:
+                tmp_write += " "
+                tmp_write += "Cgdo/Cgso參數遺失，請手動更正"
+        else:
+            if((lines.find("Cgso")!=-1) and (lines.find("Cgdo")!=-1)):
+                tmp_write += " "
+                tmp_write += process_lines[4].replace("Cgso","閘源重疊電容")
+                tmp_write += " "
+                tmp_write += process_lines[5].replace("Cgdo","閘汲重疊電容")
+            else:
+                tmp_write += " "
+                tmp_write += "Cgdo/Cgso參數遺失，請手動更正"
         output_File.write(lines.strip()+"\n"+"*"+tmp_write+"*"+"\n")
         continue
     elif(lines[0][0]=="V"):
