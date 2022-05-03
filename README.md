@@ -22,10 +22,11 @@ Python : https://www.python.org/downloads/
 
 例如: 將excerise1.cir加上註解，輸入 : Pspice_Comment_Maker.py excerise1.cir
 
+Warning : .model指令必須寫成nmos(...) or pmos(...)，不可為nmos (...)
+
 ## 後記
 
 Version1.0 : Update 2022/3/28
-
 Version1.1 : Update 2022/3/29 修正lambda偵測錯誤
-
 Version1.2 : Updata 2022/4/20 新增方波偵測和.AC指令
+Version1.3 : Updata 2022/5/3 新增偵測Cgso,Cgdo指令
