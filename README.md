@@ -25,6 +25,7 @@ Python : https://www.python.org/downloads/
 若你使用的是.exe，輸入 : Pspice_Comment_Maker.exe excerise1.cir
 
 Warning : .model指令必須寫成nmos(...) or pmos(...)，不可為nmos (...) 
+
 空格請貼著變數不要有多餘的空格，且不用寫單位，例如10uF，請寫10u，若寫10uF，註解會變成10uFF
 
 ## 後記
