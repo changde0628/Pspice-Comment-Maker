@@ -5,6 +5,7 @@
 ## 前提
 
 這個工具是用Python3寫的，因此在使用前必須確定你的電腦有Python3的任何一個版本。
+
 5/8更新 : 或使用提供的.exe檔，操作方法相同。
 
 Python : https://www.python.org/downloads/
@@ -22,6 +23,7 @@ Python : https://www.python.org/downloads/
 接著你可以開始使用Pspice_Comment_Maker了，輸入 : Pspice_Comment_Maker.py or .exe <你要加上註解的程式碼(含檔名)>
 
 例如: 將excerise1.cir加上註解，輸入 : Pspice_Comment_Maker.py excerise1.cir
+
 若你使用的是.exe，輸入 : Pspice_Comment_Maker.exe excerise1.cir
 
 Warning : .model指令必須寫成nmos(...) or pmos(...)，不可為nmos (...) 
