@@ -41,3 +41,5 @@ Version1.2 : Updata 2022/4/20 新增方波偵測和.AC指令
 Version1.3 : Updata 2022/5/3 新增偵測Cgso,Cgdo指令
 
 Version1.4 : Updata 2022/5/8 新增.exe
+
+Version1.5 : Updata 2022/5/23 修正交流電壓源偵測Bug
