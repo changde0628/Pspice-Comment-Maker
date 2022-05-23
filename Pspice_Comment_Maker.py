@@ -57,6 +57,8 @@ for lines in data_input:
             continue
         elif(process_lines[3][0]=="D"):
             tmp_write = "宣告直流電壓源"+process_lines[0]+" 正端接"+process_lines[1]+" 負端接"+process_lines[2]+" 電壓值"+process_lines[4]
+        elif(process_lines[3][0]=="A"):
+            tmp_write = "宣告交流電壓源"+process_lines[0]+" 正端接"+process_lines[1]+" 負端接"+process_lines[2]+" 電壓值"+process_lines[4]
         elif(process_lines[3][0]=="p"):
             tmp_write = "宣告方波"+process_lines[0]+"正端接"+process_lines[1]+" 負端接"+process_lines[2]
             tmp_pulse_counter = len(process_lines)-3
